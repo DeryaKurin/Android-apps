@@ -1,7 +1,7 @@
 # 5 Android app projects in Java <br>
 
 ### Project 1: Piggy Bank <br>
-A basic Android app for kids to keep and use their money. <br>
+A basic Android app for kids to deposit and withdraw their money. <br>
 
 ### Project 2: Tic-Tac_Toe <br>
 An Android Tic-tac-toe game. <br>
