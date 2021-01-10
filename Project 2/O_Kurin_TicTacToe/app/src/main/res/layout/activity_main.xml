@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965"
+        app:srcCompat="@drawable/tictactoe" />
+
+    <ImageView
+        android:id="@+id/imageView11_circle"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="340dp"
+        android:alpha="0"
+        android:onClick="firstRow1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764"
+        app:srcCompat="@drawable/tac" />
+
+    <ImageView
+        android:id="@+id/imageView11_cross"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="340dp"
+        android:alpha="0"
+        android:onClick="firstRow1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764"
+        app:srcCompat="@drawable/tic" />
+
+    <ImageView
+        android:id="@+id/imageView12_cross"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="340dp"
+        android:alpha="0"
+        android:onClick="firstRow2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.758"
+        app:srcCompat="@drawable/tic" />
+
+    <ImageView
+        android:id="@+id/imageView12_circle"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="340dp"
+        android:alpha="0"
+        android:onClick="firstRow2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.758"
+        app:srcCompat="@drawable/tac" />
+
+    <ImageView
+        android:id="@+id/imageView13_cross"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="340dp"
+        android:alpha="0"
+        android:onClick="firstRow3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752"
+        app:srcCompat="@drawable/tic" />
+
+    <ImageView
+        android:id="@+id/imageView13_circle"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="340dp"
+        android:alpha="0"
+        android:onClick="firstRow3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752"
+        app:srcCompat="@drawable/tac" />
+
+    <ImageView
+        android:id="@+id/imageView22_cross"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="250dp"
+        android:alpha="0"
+        android:onClick="secondRow2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tic" />
+
+    <ImageView
+        android:id="@+id/imageView21_circle"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="250dp"
+        android:alpha="0"
+        android:onClick="secondRow1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tac" />
+
+    <ImageView
+        android:id="@+id/imageView21_cross"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="250dp"
+        android:alpha="0"
+        android:onClick="secondRow1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tic" />
+
+    <ImageView
+        android:id="@+id/imageView22_circle"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="250dp"
+        android:alpha="0"
+        android:onClick="secondRow2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tac" />
+
+    <ImageView
+        android:id="@+id/imageView23_cross"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="250dp"
+        android:alpha="0"
+        android:onClick="secondRow3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tic" />
+
+    <ImageView
+        android:id="@+id/imageView23_circle"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="250dp"
+        android:alpha="0"
+        android:onClick="secondRow3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tac" />
+
+    <ImageView
+        android:id="@+id/imageView32_cross"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="130dp"
+        android:alpha="0"
+        android:onClick="thirdRow2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tic" />
+
+    <ImageView
+        android:id="@+id/imageView31_circle"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="130dp"
+        android:alpha="0"
+        android:onClick="thirdRow1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tac" />
+
+    <ImageView
+        android:id="@+id/imageView31_cross"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="130dp"
+        android:alpha="0"
+        android:onClick="thirdRow1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tic" />
+
+    <ImageView
+        android:id="@+id/imageView32_circle"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="130dp"
+        android:alpha="0"
+        android:onClick="thirdRow2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tac" />
+
+    <ImageView
+        android:id="@+id/imageView33_cross"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="130dp"
+        android:alpha="0"
+        android:onClick="thirdRow3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tic" />
+
+    <ImageView
+        android:id="@+id/imageView33_circle"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="130dp"
+        android:alpha="0"
+        android:onClick="thirdRow3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tac" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:alpha="0"
+        android:background="@color/colorPrimaryDark"
+        android:text="play again"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created by Derya O. Kurin"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        android:layout_marginTop="300dp"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pick4Activity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick 4"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textSize="24dp"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the numbers: "
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+        <EditText
+            android:id="@+id/firstNo1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/secondNo1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@id/firstNo1"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/thirdNo1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@id/secondNo1"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/fourthNo1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@id/thirdNo1"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+        <Button
+            android:id="@+id/buttonRandom1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:text="Quick pick"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="547dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linearline1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+        <EditText
+            android:id="@+id/firstNo2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearline1" />
+
+        <EditText
+            android:id="@+id/secondNo2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@id/firstNo2"
+            app:layout_constraintTop_toBottomOf="@+id/linearline1" />
+
+        <EditText
+            android:id="@+id/thirdNo2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@id/secondNo2"
+            app:layout_constraintTop_toBottomOf="@+id/linearline1" />
+
+        <EditText
+            android:id="@+id/fourthNo2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@id/thirdNo2"
+            app:layout_constraintTop_toBottomOf="@+id/linearline1" />
+
+
+        <Button
+            android:id="@+id/buttonRandom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:text="Quick pick"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearline1"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="547dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearline3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linearline2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+        <EditText
+            android:id="@+id/firstNo3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearline2" />
+
+        <EditText
+            android:id="@+id/secondNo3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@id/firstNo3"
+            app:layout_constraintTop_toBottomOf="@+id/linearline2" />
+
+        <EditText
+            android:id="@+id/thirdNo3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@id/secondNo3"
+            app:layout_constraintTop_toBottomOf="@+id/linearline2" />
+
+        <EditText
+            android:id="@+id/fourthNo3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@id/thirdNo3"
+            app:layout_constraintTop_toBottomOf="@+id/linearline2" />
+
+
+        <Button
+            android:id="@+id/buttonRandom3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:text="Quick pick"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearline2"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="547dp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/saveAndPlayPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchase and Play PowerBall"
+        app:layout_constraintBottom_toTopOf="@+id/createdBy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="60dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+
+    <TextView
+        android:id="@+id/createdBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created by Derya O. Kurin"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

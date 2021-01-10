@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "CMSC234_Project1_Piggy_Bank"

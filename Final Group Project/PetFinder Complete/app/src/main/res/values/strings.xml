@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pet Finder</string>
+    <string name="request_form">Request Form</string>
+    <string name="name">Name *</string>
+    <string name="email">Email *</string>
+    <string name="phone">Phone *</string>
+    <string name="address_1">Address 1 *</string>
+    <string name="address_2_optional">Address 2 ( optional )</string>
+    <string name="zip_code">Zip Code *</string>
+    <string name="social_security">Social Security # *</string>
+    <string name="request">Request</string>
+
+    <array name="pet_size">
+        <item>-- Select Pet Size --</item>
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+        <item>xlarge</item>
+
+    </array>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Piggy Bank</string>
+    <string name="app_creator">Created by Derya O. Kurin</string>
+    <string name="spend">spend</string>
+    <string name="save">save</string>
+    <string name="process">Process Transaction</string>
+    <string name="money_saved">Money saved: </string>
+    <string name="money_spent">"Money spent: "</string>
+    <string name="intro">Enter the number of coins below</string>
+    <string name="quarters">Quarters: </string>
+    <string name="dimes">Dimes: </string>
+    <string name="nickels">Nickels: </string>
+    <string name="pennies">Pennies: </string>
+    <string name="calculate_total">Calculate Total</string>
+    <string name="total">Total $: </string>
+    <string name="amount_to_save_or_spend">Amount to save or spent</string>
+
+</resources>
