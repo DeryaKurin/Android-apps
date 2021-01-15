@@ -17,3 +17,5 @@ An Andoid app that uses OpenWeatherMap API. <br>
 
 ### Group Project: Find A Pet <br>
 An Android app that uses PetFinder API. <br>
+
+![Alt text](https://github.com/DeryaKurin/Android-apps/blob/main/Final%20Group%20Project/findapet.png "Find a pet")
