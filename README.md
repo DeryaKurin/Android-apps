@@ -1,4 +1,4 @@
-# 5 Android app projects in Java <br>
+# Android app projects in Java <br>
 
 ### Project 1: Piggy Bank <br>
 A basic Android app for kids to deposit and withdraw their money. <br>
