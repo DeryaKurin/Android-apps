@@ -1,0 +1,144 @@
+Design:
+
+Player.java
+Create data fields:
+Name
+Score
+Wins
+Losses
+Ties
+Create constructor with only id and name, initialize other fields to 0
+Create Getters and Setters
+Override toString Method
+
+
+
+Activity.main.xml
+Add Button for Game Emulator Activity
+Add button for Add New Player Activity
+Add button for Select Player 1 Activity
+Add button for Select Player 2 Activity
+Add button for Score Board Activity
+
+MainAcitivity.java
+Add a new activity intent for each Button on Click
+
+
+GameEmulator.java
+
+Inserted previous TicTacToe game, this time with 2 players
+Additional data Fields:
+Player1Name
+Player2Name
+
+Process: onCreate
+
+Create an instance of Intent
+IF Player 1 name equals to “Choose a Player”
+Show the Select Player 1 button,  
+ELSE
+	Hide the Select Player 1 button,  
+ENDIF
+Get Extras for Player 1 Name from Intent
+Set Player 1 Name
+
+Get Extras for Player 1 and 2 Name from Intent
+If player 1 and player 2 names are not null
+For Player 1 and 2:
+Do
+Get the json object that matches with the name and set as a Player object 
+ENDProcess
+
+
+Add 3 onClick event handlers:
+onScoreBoardClick
+
+Before launching the score board intent, 
+Save the new player 1 and player 2 object game results in shared preferences file.
+Then open the intent.
+
+
+onSelectPlayer1Click and 
+onSelectPlayer2Click >   creates an intent for opening corresponding activities
+
+
+
+
+Add Player Activity
+
+Process: onCreate
+Register the EditView with its id
+Register the Button  with its id
+
+AddPlayer on Click at the Button
+Create an instance of sharedPreferences and add create Player object with id and name
+Add the player object to Shared Preferences file
+
+Create an ArrayList of Player names with String object
+Convert String to Json object,
+Extract the name and add it to a list
+Add the list items to ListView to be shown in SelectPlayer 1 and SelectPlayer 2
+ENDPROCESS
+
+
+
+
+SelectPlayer1Activity /SelectPlayer2 Activities,
+
+They are very similar so the design given together:
+Create List view mPlayers
+Create an adapter for list view  and attach mPlayerNames into it as  simple_list_item_1
+Process: onCreate
+Get all the strings as names from SharedPreferences
+If names not null
+Try/catch : Read json strings and save only the names in an ArrayList playerNames
+For each value in names, 
+Add the name String to playerNames arrayList.
+
+On save Button, send the player name to the next intent
+(Player1Select > only player1 name
+Player2Select > both names to game emulator activity)
+
+
+
+Score Board Activity
+
+Create fields for each cell in the table as Text View
+Player1 name, wins, ties, losses, 
+Player2 name, wins, ties, losses
+
+Open Shared Preferences and get all under names Map
+Create a JSON reader and 
+Get all the names to ArrayList playerNames
+get all the player json strings into ArrayList players
+Create an empty ArrayList playerList that holds Player object
+
+For each player string 
+Convert it to a Player object and store it in playerList ArrayList made of Player objects
+
+Craete max
+maxPlayer1index
+maxPlayer2index
+maxPlayer3index
+
+
+For each player in playerList 
+Get the highest score
+Store it in playertop1
+Remove it from the list
+
+Repeat it 2 more times to get the second and third place.
+
+Set Texts for each sell accordingly.
+
+
+
+
+Score Board:
+
+The Score board has a logic which gets all the json objects from sharedpreferences file and convert them into Player objects and stores them in an arrayList of Players.
+Then after searching it displays only the players with the top 3 totalScores. 
+
+
+
+ 
